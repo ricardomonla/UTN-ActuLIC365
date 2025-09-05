@@ -3,6 +3,8 @@
 # Autor: Lic. Ricardo MONLA
 # Descripcion: Script para ...
 
+# Verificar si puede ejecutar el modulo
+Get-Command Set-MgBetaUserLicense
 
 # Obtener la licencia
 $licencia = Get-MgBetaSubscribedSku -All | Where-Object SkuPartNumber -eq 'STANDARDWOFFPACK_STUDENT'
